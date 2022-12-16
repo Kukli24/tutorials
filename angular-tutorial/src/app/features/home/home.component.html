@@ -1,12 +1,21 @@
 <ActionBar title="NativeFlix"></ActionBar>
+<button text="Tap me!" (tap)="onTap($event)"></button>
+<!-- <BarcodeScanner
+      class="scanner-round"
+      formats="QR_CODE, EAN_13"
+      beepOnScan="true"
+      reportDuplicates="true"
+      preferFrontCamera="false"
 
-<ListView
+      (scanResult)="onScanResult($event)">
+</BarcodeScanner> -->
+<!-- <ListView
     height="100%"
     separatorColor="transparent"
     [items]="flicks"
     (itemTap)="onFlickTap($event)">
     <ng-template let-item="item">
-        <!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
+
         <GridLayout
             height="280"
             borderRadius="10"
@@ -37,4 +46,4 @@
         </GridLayout>
       </ng-template>
 
-</ListView>
+</ListView> -->
